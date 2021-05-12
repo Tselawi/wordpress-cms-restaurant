@@ -5,3 +5,8 @@ Author: Tariq & Zena
 Author URI: https://github.com/tselawi
 Version: 1.0
 */
+ @font-face {
+	font-family: "Poppins";
+	src: url(http://localhost/wordpress/wp-content/themes/cms-restaurant/fonts/Poppins-Regular.ttf) format("opentype");
+	font-weight: normal;
+} 

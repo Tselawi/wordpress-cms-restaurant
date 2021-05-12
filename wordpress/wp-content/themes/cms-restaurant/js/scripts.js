@@ -1,3 +1,3 @@
-$(document).ready(function () {
-  alert("Hello! I am an alert box!!");
-});
+// $(document).ready(function () {
+// 	alert("Hello! I am an alert box!!");
+// });
