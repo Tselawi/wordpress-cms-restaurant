@@ -16,7 +16,7 @@
 
 		<div class="container">
 			<!-- <h3 class="logo">DEV RESTAURANT</h3> -->
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar navbar-expand-lg navbar-light justify-content-between m-auto">
 				<h3 class="navbar-brand" href="#">DEV RESTAURANT</h3>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<?php wp_nav_menu(

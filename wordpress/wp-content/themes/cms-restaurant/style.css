@@ -11,7 +11,19 @@ Version: 1.0
     format('opentype');
   font-weight: normal;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.main-section {
+  justify-content: center;
+  align-items: center;
+}
 header {
   background-color: #fff;
   width: 100%;
@@ -20,14 +32,17 @@ header {
 .navigation {
   display: flex;
   flex-direction: row;
-  float: right;
+  justify-content: space-between;
+  align-items: center;
+
   height: 40px;
   width: 75%;
 }
+
 ul li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 150px;
 }
 a {
