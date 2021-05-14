@@ -5,3 +5,37 @@ Author: Tariq & Zena
 Author URI: https://github.com/tselawi
 Version: 1.0
 */
+@font-face {
+  font-family: 'Poppins';
+  src: url(http://localhost/wordpress/wp-content/themes/cms-restaurant/fonts/Poppins-Regular.ttf)
+    format('opentype');
+  font-weight: normal;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  height: 40px;
+  width: 75%;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
