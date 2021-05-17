@@ -1,13 +1,22 @@
 <?php get_header(); ?>
+<?php
+$image = get_field('feature_image');
+$pictureSize = $image['sizes']['my_custom_size'];
+?>
+       
 
+
+       <img src="<?= $pictureSize ?>" class="img-fluid">
 <div class="container">
-    <h1><?php the_title(); ?></h1>
 
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php if (have_posts()):
+        while (have_posts()):
+            the_post(); ?>
 
             <div><?php the_content(); ?></div>
-
-    <?php endwhile;
+            
+    <?php
+        endwhile;
     endif; ?>
 </div>
 
