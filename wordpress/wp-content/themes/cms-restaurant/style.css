@@ -6,58 +6,71 @@ Author URI: https://github.com/tselawi
 Version: 1.0
 */
 @font-face {
-  font-family: 'Poppins';
-  src: url(http://localhost/wordpress/wp-content/themes/cms-restaurant/fonts/Poppins-Regular.ttf)
-    format('opentype');
-  font-weight: normal;
+	font-family: "Poppins";
+	src: url(http://localhost/wordpress/wp-content/themes/cms-restaurant/fonts/Poppins-Regular.ttf)
+		format("opentype");
+	font-weight: normal;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  width: 100vw;
-  height: 100vh;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
 }
-.main-section {
-  justify-content: center;
-  align-items: center;
-}
+
 .navbar {
-  justify-content: space-around;
+	justify-content: space-between;
 }
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  width: 500px;
-  list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 40px;
+	width: 600px;
+	list-style: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 a:hover {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 .wrapper-navbar {
-  margin-bottom: -200px;
+	margin-bottom: -200px;
 }
 .banner-home {
-  /* height: 800px;
-  background-image: url(./images/banner-top.jpg); */
-  background-size: cover;
+	width: 100vw;
+	height: 100vh;
 }
+
+.bg-img {
+	background-size: cover;
+}
+
 .title {
-  color: #fff !important;
-  margin-top: 300px;
-  position: absolute;
-  width: 200px;
-  padding-left: 200px;
+	/* color: #fff !important; */
+	position: absolute;
+	top: 40%;
+	width: 20%;
+	font-size: 3rem;
+	line-height: 1.5;
+	color: red;
+}
+.main-title {
+	width: 20%;
+	font-size: 4rem;
+	font-weight: 600;
+	color: yellow;
 }
 /* .img-bg {
   height: 500px;
@@ -66,3 +79,10 @@ a:hover {
   background-size: cover;
   position: relative;
 } */
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-size: 2.3rem;
+	font-weight: 500;
+	letter-spacing: 2;
+}
