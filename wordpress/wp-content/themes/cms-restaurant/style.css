@@ -20,10 +20,10 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.main-section {
+/* .main-section {
   justify-content: center;
   align-items: center;
-}
+} */
 .navbar {
   justify-content: space-around;
 }
@@ -66,3 +66,6 @@ a:hover {
   background-size: cover;
   position: relative;
 } */
+.navbar-brand {
+  text-transform: uppercase;
+}

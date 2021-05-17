@@ -10,12 +10,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<!-- <h1 class="logo"><?php bloginfo('name'); ?></h1>  -->
-
 	<header class=" wrapper-navbar">
 		<div class="container">
 			<nav class="navbar">
-				<h3 class="navbar-brand text-white" href="#">DEV RESTAURANT</h3>
+				<h3 class="navbar-brand text-white" href="#"><?php bloginfo('name'); ?></h3>
 									<?php wp_nav_menu([
              'theme_location' => 'menu-header-1',
              'menu_class' => 'navigation',
