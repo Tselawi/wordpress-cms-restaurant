@@ -14,20 +14,17 @@
 	
 
 	<header class="sticky-top">
-
 		<div class="container">
-			<!-- <h3 class="logo">DEV RESTAURANT</h3> -->
-			<nav class="navbar navbar-expand-lg navbar-light justify-content-between m-auto">
-				<h3 class="navbar-brand" href="#">DEV RESTAURANT</h3>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<?php wp_nav_menu(
-						array(
-							'theme_location' => 'menu-header-1',
-							'menu_class' => 'navigation',
-
-						)
-					); ?>
-				</div>
+			<nav class="navbar  navbar-light">
+			
+				<h3 class="navbar-brand " href="#">DEV RESTAURANT</h3>
+				<!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+									<?php wp_nav_menu([
+             'theme_location' => 'menu-header-1',
+             'menu_class' => 'navigation',
+         ]); ?>
+	<!-- </div> -->
 			</nav>
 		</div>
 	</header>
+									</section>
