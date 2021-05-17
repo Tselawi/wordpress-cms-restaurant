@@ -13,18 +13,15 @@
 	<!-- <h1 class="logo"><?php bloginfo('name'); ?></h1>  -->
 	
 
-	<header class="sticky-top">
+	<header class=" wrapper-navbar">
 		<div class="container">
-			<nav class="navbar navbar">
-			
-				<h3 class="navbar-brand " href="#">DEV RESTAURANT</h3>
-				<!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+			<nav class="navbar">
+				<h3 class="navbar-brand text-white" href="#">DEV RESTAURANT</h3>
 									<?php wp_nav_menu([
              'theme_location' => 'menu-header-1',
              'menu_class' => 'navigation',
          ]); ?>
-	<!-- </div> -->
 			</nav>
 		</div>
 	</header>
-									</section>
+								

@@ -24,12 +24,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-header {
-  width: 100%;
-  height: 100px;
-}
 .navbar {
-  width: 1000px;
+  justify-content: space-around;
 }
 .navigation {
   display: flex;
@@ -42,13 +38,27 @@ header {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
-
+.wrapper-navbar {
+  margin-bottom: -200px;
+}
+.banner-home {
+  /* height: 800px;
+  background-image: url(./images/banner-top.jpg); */
+  background-size: cover;
+}
+.title {
+  color: #fff !important;
+  margin-top: 300px;
+  position: absolute;
+  width: 200px;
+  padding-left: 200px;
+}
 /* .img-bg {
   height: 500px;
   background-position: top;
