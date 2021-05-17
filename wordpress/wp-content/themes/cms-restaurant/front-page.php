@@ -6,8 +6,10 @@ $pictureSize = $image['sizes']['my_custom_size'];
        
 
 
-       <img src="<?= $pictureSize ?>" class="img-fluid">
+       
 <div class="container">
+<img src="<?= $pictureSize ?>" class="img-fluid">
+
 
     <?php if (have_posts()):
         while (have_posts()):

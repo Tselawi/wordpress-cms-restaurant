@@ -15,7 +15,7 @@
 
 	<header class="sticky-top">
 		<div class="container">
-			<nav class="navbar  navbar-light">
+			<nav class="navbar navbar">
 			
 				<h3 class="navbar-brand " href="#">DEV RESTAURANT</h3>
 				<!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
