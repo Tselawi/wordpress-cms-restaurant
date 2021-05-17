@@ -11,6 +11,7 @@
 
 <body <?php body_class(); ?>>
 	<!-- <h1 class="logo"><?php bloginfo('name'); ?></h1>  -->
+	
 
 	<header class="sticky-top">
 

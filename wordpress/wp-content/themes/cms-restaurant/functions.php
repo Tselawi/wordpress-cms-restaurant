@@ -61,3 +61,8 @@ function register_theme_menus() {
   );
 };
 add_action( 'init', 'register_theme_menus' );
+
+// For images features
+add_theme_support('post-thumbnails');
+add_image_size('smallest', 300, 300, true);
+add_image_size('largest', 800, 800, true);
