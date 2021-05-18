@@ -7,7 +7,7 @@ $borderImage_resto = get_field('border_image_resto');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 $link = get_field('link_menu');
 $link_url = $link['url'];
-$link_title = $link['title'];
+
 $link_target = $link['target'] ? $link['target'] : '_self';
 ?>
 
@@ -35,11 +35,13 @@ $link_target = $link['target'] ? $link['target'] : '_self';
                                 <?php endif; ?> 
 
                                 <?php if ($link): ?>
-                                    <div class="line-menu"><a class="menu-link text-dark" href="<?php echo esc_url(
+                                    <div class="d-inline">
+
+                                        <hr class="d-inline-block "><a class=" d-inline-block menu-link text-dark px-3" href="<?php echo esc_url(
                                         $link_url
                                     ); ?>" target="<?php echo esc_attr(
-    $link_target
-); ?>">Check Our Menu</a></div>
+                                    $link_target
+                                    ); ?>">Check Our Menu</a></div>
                                 <?php endif; ?>
                 </div>
                 <div class="col"></div>
