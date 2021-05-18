@@ -86,6 +86,7 @@ function register_theme_menus()
 add_action('init', 'register_theme_menus');
 
 // image sizes
-add_image_size('my_custom_size', 1900, 1080, true);
+add_image_size('my_custom_size', 1920, 1080, true);
+add_image_size('my_custom_border_size', 1920, 100, false);
 
 // add_theme_support('image');

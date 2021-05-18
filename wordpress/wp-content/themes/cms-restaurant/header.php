@@ -6,14 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php wp_head(); ?>
-	<title>CMS-Restaurant</title>
+	<title><?php bloginfo('name'); ?></title>
 </head>
 
 <body <?php body_class(); ?>>
-	<header class=" wrapper-navbar">
+	
+	
+
+	<header class=" wrapper-navbar ">
 		<div class="container">
-			<nav class="navbar">
-				<h3 class="navbar-brand text-white" href="#"><?php bloginfo('name'); ?></h3>
+			<nav class="navbar py-5">
+				<a class="navbar-brand text-white" href="#"><?php bloginfo('name'); ?></a>
 									<?php wp_nav_menu([
              'theme_location' => 'menu-header-1',
              'menu_class' => 'navigation',
