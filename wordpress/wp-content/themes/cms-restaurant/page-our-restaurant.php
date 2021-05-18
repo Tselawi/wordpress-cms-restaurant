@@ -1,14 +1,14 @@
-<?php get_header(); 
+<?php get_header();
 $restaurant_title = get_field('restaurant_title');
-$restaurant_title_small= get_field('title_small');
+$restaurant_title_small = get_field('title_small');
 $image_bg = get_field('resto_image');
 $picture = $image_bg['sizes']['my_custom_size'];
 $borderImage_resto = get_field('border_image_resto');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 $link = get_field('link_menu');
-
-
-
+$link_url = $link['url'];
+$link_title = $link['title'];
+$link_target = $link['target'] ? $link['target'] : '_self';
 ?>
 
 
@@ -34,8 +34,12 @@ $link = get_field('link_menu');
                                     <h1 class="title text-uppercase text-bold"><?= $restaurant_title ?></h1>
                                 <?php endif; ?> 
 
-                                <?php if( $link ): ?>
-                                   <hr style= "width : 10px"> <a class="button text-dark" href="<?php echo esc_url( $link ); ?>">Check Our Menu</a>
+                                <?php if ($link): ?>
+                                    <div class="line-menu"><a class="menu-link text-dark" href="<?php echo esc_url(
+                                        $link_url
+                                    ); ?>" target="<?php echo esc_attr(
+    $link_target
+); ?>">Check Our Menu</a></div>
                                 <?php endif; ?>
                 </div>
                 <div class="col"></div>
@@ -43,14 +47,5 @@ $link = get_field('link_menu');
         </div>
    
 </section>
-
-
-
-
-
-
-
-
-
 
 <?php get_footer(); ?>
