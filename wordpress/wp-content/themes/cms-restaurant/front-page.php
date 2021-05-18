@@ -28,7 +28,7 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                 <?php endif; ?>
 
                                 <?php if ($main_title): ?>
-                                    <h1 class="title"><?= $main_title ?></h1>
+                                    <h1 class="title text-uppercase"><?= $main_title ?></h1>
                                 <?php endif; ?> 
                 </div>
                 <div class="col"></div>
