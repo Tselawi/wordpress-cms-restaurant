@@ -48,29 +48,28 @@ a:hover {
 .wrapper-navbar {
 	margin-bottom: -200px;
 }
-.banner-home {
+/* .banner-home {
 	width: 100vw;
 	height: 100vh;
-}
+} */
 
 .bg-img {
 	background-size: cover;
 }
 
-.title {
-	/* color: #fff !important; */
+/* .title {
+	color: #fff !important;
 	position: absolute;
 	top: 40%;
 	width: 20%;
 	font-size: 3rem;
 	line-height: 1.5;
 	color: red;
-}
+} */
 .main-title {
-	width: 20%;
+	height: 50vh;
 	font-size: 4rem;
 	font-weight: 600;
-	color: yellow;
 }
 /* .img-bg {
   height: 500px;
