@@ -52,6 +52,11 @@ a:hover {
 	width: 100vw;
 	height: 100vh;
 } */
+.banner-top {
+  position: relative;
+  z-index: 1;
+}
+
 .line-menu {
   border-left: 5px solid black;
 }
@@ -60,7 +65,10 @@ a:hover {
   font-size: 20px;
 }
 .img-bg {
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* .title {

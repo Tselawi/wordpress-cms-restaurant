@@ -6,11 +6,16 @@ $image = get_field('feature_image');
 $picture = $image['sizes']['my_custom_size'];
 $borderImage = get_field('border_image');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
+$link = get_field('menu_link');
+$link_url = $link['url'];
+$link_target = $link['target'] ? $link['target'] : '_self';
+// cards
+$img_first_icon = get_field('icon_card_1');
 ?>
        
-
-<section class="landing-page"> 
-<!-- <img src="<?php echo $picture; ?>" class="bg-img">       -->
+       
+<section class="container-fluid border border-success"> 
+<!-- <img src="<?php echo $picture; ?>" class="bg-img">  -->
   
         <div class="row my-5 border border-dark border-5 ">
                 <div class="main-title col-6 border border-primary border-5">
@@ -30,11 +35,48 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                 <?php if ($main_title): ?>
                                     <h1 class="title text-uppercase"><?= $main_title ?></h1>
                                 <?php endif; ?> 
+                                <?php if ($link): ?>
+                                    <div class="line-menu"><a class="menu-link text-dark" href="<?php echo esc_url(
+                                        $link_url
+                                    ); ?>" target="<?php echo esc_attr(
+    $link_target
+); ?>">Check Our Menu</a></div>
+                                <?php endif; ?>
                 </div>
                 <div class="col"></div>
         
         </div>
-   
+   <div class="container border border-warning">
+       <div class="row">
+           <div class="col-4 border border-info  text-center">
+               <div class="card border border-dark">
+  <img class="card-img-top" src="<?= $img_first_icon ?>" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+</div>
+           <div class="col-4 border border-info text-center">
+               <div class="card border border-dark">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+</div>
+           <div class="col-4 border border-info text-center">
+               <div class="card border border-dark">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+</div>
+       </div>
+   </div>
 </section>
 <?php get_footer(); ?>
 

@@ -10,7 +10,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<main class="container-fluid h-100 border border-info border-5">
+	<main class="banner-top container-fluid h-100 border border-info border-5">
 
 	<div class="container justify-content-center align-center h-100 border border-danger border-5">
 		<header class=" d-flex flex-wrap justify-content-center py-3 mb-4 bg-dark">
