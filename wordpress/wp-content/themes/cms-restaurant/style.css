@@ -52,7 +52,13 @@ a:hover {
 	width: 100vw;
 	height: 100vh;
 } */
-
+.line-menu {
+  border-left: 5px solid black;
+}
+.menu-link {
+  display: block;
+  font-size: 20px;
+}
 .img-bg {
   background-size: cover;
 }
