@@ -11,6 +11,7 @@ Version: 1.0
     format('opentype');
   font-weight: normal;
 } */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -53,7 +54,7 @@ a:hover {
 .banner-top {
 	position: relative;
 	z-index: 1;
-	height: 1100px;
+	height: 950px;
 }
 .banner-row {
 	height: 700px;
@@ -68,6 +69,12 @@ a:hover {
 	filter: brightness(40%);
 	width: 1920px;
 	height: 1080px;
+}
+.border-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: rotate(180deg);
 }
 
 /* .line-menu {
