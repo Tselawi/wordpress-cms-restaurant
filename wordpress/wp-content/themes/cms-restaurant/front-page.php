@@ -9,15 +9,17 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 $link = get_field('menu_link');
 $link_url = $link['url'];
 $link_target = $link['target'] ? $link['target'] : '_self';
+
 // cards
-$img_first_icon = get_field('icon_card_1');
+$img_first_icon = get_field('first_icon_card');
 ?>
        
        
-<section class="container-fluid border border-success"> 
-<!-- <img src="<?php echo $picture; ?>" class="bg-img">  -->
-  
-        <div class="row my-5 border border-dark border-5 ">
+<section class="container-fluid border border-success border-5 banner-top"> 
+<img src="<?php echo $picture; ?>" class="bg-img"> 
+<div class="container">
+        <div class="banner-row row my-5 border border-warning border-5 ">
+        <!-- <div class="col-2"></div> -->
                 <div class="main-title col-6 border border-primary border-5">
                     <?php if (have_posts()):
                         while (have_posts()):
@@ -28,7 +30,7 @@ $img_first_icon = get_field('icon_card_1');
                     endif; ?>
 
                              <?php if ($text): ?>
-                                    <h3><?= $text ?></h3>
+                                    <h3 class="text-white"><?= $text ?></h3>
                                     
                                 <?php endif; ?>
 
@@ -36,11 +38,11 @@ $img_first_icon = get_field('icon_card_1');
                                     <h1 class="title text-uppercase"><?= $main_title ?></h1>
                                 <?php endif; ?> 
                                 <?php if ($link): ?>
-                                    <div class="line-menu"><a class="menu-link text-dark" href="<?php echo esc_url(
-                                        $link_url
-                                    ); ?>" target="<?php echo esc_attr(
+                                   <a class="menu-link text-white" href="<?php echo esc_url(
+                                       $link_url
+                                   ); ?>" target="<?php echo esc_attr(
     $link_target
-); ?>">Check Our Menu</a></div>
+); ?>"><hr style='display:inline-block; background-color:white; width:50px; height:2px'> Check Our Menu</a>
                                 <?php endif; ?>
                 </div>
                 <div class="col"></div>
@@ -76,6 +78,7 @@ $img_first_icon = get_field('icon_card_1');
 </div>
 </div>
        </div>
+   </div>
    </div>
 </section>
 <?php get_footer(); ?>
