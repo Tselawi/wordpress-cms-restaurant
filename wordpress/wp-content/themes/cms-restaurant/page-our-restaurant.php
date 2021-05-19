@@ -7,7 +7,6 @@ $borderImage_resto = get_field('border_image_resto');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 $link = get_field('link_menu');
 $link_url = $link['url'];
-
 $link_target = $link['target'] ? $link['target'] : '_self';
 ?>
 
@@ -47,7 +46,5 @@ $link_target = $link['target'] ? $link['target'] : '_self';
                 <div class="col"></div>
         
         </div>
-   
 </section>
-
 <?php get_footer(); ?>
