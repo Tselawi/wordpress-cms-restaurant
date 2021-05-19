@@ -38,17 +38,20 @@ $img_first_icon = get_field('first_icon_card');
                                 <?php if ($main_title): ?>
                                     <h1 class="title text-uppercase"><?= $main_title ?></h1>
                                 <?php endif; ?> 
+                                <div class="menu-link text-white">
                                 <?php if ($link): ?>
-                                   <a class="menu-link text-white" href="<?php echo esc_url(
+                                    ⎯⎯⎯⎯ <a href="<?php echo esc_url(
                                        $link_url
                                    ); ?>" target="<?php echo esc_attr(
     $link_target
-); ?>"><hr style='display:inline-block; background-color:white; width:50px; height:2px'> Check Our Menu</a>
+); ?>">Check Our Menu</a>
                                 <?php endif; ?>
+                                </div>
                 </div>
                 <div class="col"></div>
         
         </div>
+        </section>
    <div class="container border border-warning">
        <div class="row">
            <div class="col-4 border border-info  text-center">
@@ -81,7 +84,7 @@ $img_first_icon = get_field('first_icon_card');
        </div>
    </div>
    </div>
-</section>
+
 <?php get_footer(); ?>
 
 

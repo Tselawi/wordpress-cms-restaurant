@@ -49,8 +49,11 @@ $link_target = $link['target'] ? $link['target'] : '_self';
    
    </div>
 </section>
-<section class="container-fluid border border-danger border-5">
-    
+<section class="container-fluid border border-danger border-5 bg-light">
+    <div class="container py-5 text-center">
+        <h3>Welcome In Liège</h3>
+        <h4 class="text-uppercase">Presentation</h4>
+    </div>
 </section>
 
 
