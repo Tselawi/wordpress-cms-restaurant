@@ -16,7 +16,8 @@ $img_first_icon = get_field('first_icon_card');
        
        
 <section class="container-fluid border border-success border-5 banner-top"> 
-<img src="<?php echo $picture; ?>" class="bg-img"> 
+    
+<img src="<?php echo $picture; ?>" class="bg-img "> 
 <div class="container">
         <div class="banner-row row my-5 border border-warning border-5 ">
         <!-- <div class="col-2"></div> -->

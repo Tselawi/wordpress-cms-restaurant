@@ -45,13 +45,7 @@ a:hover {
 	text-decoration: none;
 	color: #fff;
 }
-.wrapper-navbar {
-	margin-bottom: -200px;
-}
-/* .banner-home {
-	width: 100vw;
-	height: 100vh;
-} */
+
 .main-header {
 	position: relative;
 	z-index: 2;
@@ -70,6 +64,12 @@ a:hover {
 	left: 0;
 	z-index: -1;
 }
+.img-resto {
+	filter: brightness(40%);
+	width: 1920px;
+	height: 1080px;
+}
+
 /* .line-menu {
   border-left: 50px solid #fff;
 } */
