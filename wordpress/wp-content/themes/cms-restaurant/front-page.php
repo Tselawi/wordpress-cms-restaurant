@@ -48,6 +48,7 @@ $img_first_icon = get_field('first_icon_card');
                 <div class="col"></div>
         
         </div>
+        </section>
    <div class="container border border-warning">
        <div class="row">
            <div class="col-4 border border-info  text-center">
@@ -80,7 +81,7 @@ $img_first_icon = get_field('first_icon_card');
        </div>
    </div>
    </div>
-</section>
+
 <?php get_footer(); ?>
 
 
