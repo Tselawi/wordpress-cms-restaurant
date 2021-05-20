@@ -12,9 +12,8 @@ $link_target = $link['target'] ? $link['target'] : '_self';
 
 <img src="<?php echo $picture; ?>" class="bg-img"> 
 <div class="container">
-        <div class="banner-row row my-5 border border-warning border-5 ">
-        <!-- <div class="col-2"></div> -->
-                <div class="main-title col-6 border border-primary border-5">
+        <div class="banner-row row my-5">
+                <div class="main-title col-6">
                     <?php if (have_posts()):
                         while (have_posts()):
                             the_post(); ?>
@@ -42,5 +41,6 @@ $link_target = $link['target'] ? $link['target'] : '_self';
                                 </div>
                 </div>
                 <div class="col"></div>
-        
+                
         </div>
+        <img src="<?= $pictureBorder; ?>" class="border-img-home"> 
