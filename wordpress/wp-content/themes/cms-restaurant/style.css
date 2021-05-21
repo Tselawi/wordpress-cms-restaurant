@@ -149,7 +149,25 @@ a:hover {
   border-style: none;
 }
 
+.bg-main-resto {
+  position: relative;
+  z-index: 1;
+}
+
 .bg-resto {
-  background-color: rgb(245, 245, 245);
-  opacity: 0.1;
+  position: absolute;
+  z-index: -2;
+  background-color: rgb(219, 217, 217);
+  opacity: 0.3;
+}
+.bg-border-1 {
+  position: absolute;
+  z-index: -1;
+  top: -35%;
+}
+.bg-border-2 {
+  position: absolute;
+  z-index: -1;
+  bottom: -280%;
+  transform: rotate(180deg);
 }
