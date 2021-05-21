@@ -66,12 +66,7 @@ $link_target = $link['target'] ? $link['target'] : '_self';
                     <div class="card-body">
                         <h5 class="card-title my-2">Small Card Title</h5>
                         <h3 class="card-title fw-bold my-2">Large Card Title</h3>
-                        <p class=" lead card-text my-2 lh-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita repudiandae excepturi eos, cum explicabo culpa dignissimos dolores, possimus
-                            voluptatibus rerum velit enim ea quia doloribus nam nostrum voluptate. In, minus.Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Expedita repudiandae excepturi eos, cum
-                            explicabo culpa dignissimos dolores, possimus voluptatibus rerum velit enim ea quia
-                            doloribus nam nostrum voluptate. In, minus.</p>
+                        <p class=" lead card-text my-2 lh-lg "></p>
 
                     </div>
                 </div>
@@ -85,12 +80,7 @@ $link_target = $link['target'] ? $link['target'] : '_self';
                     <div class="card-body">
                         <h5 class="card-title my-2">Small Card Title</h5>
                         <h3 class="card-title fw-bold my-2">Large Card Title</h3>
-                        <p class=" lead card-text my-2 lh-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita repudiandae excepturi eos, cum explicabo culpa dignissimos dolores, possimus
-                            voluptatibus rerum velit enim ea quia doloribus nam nostrum voluptate. In, minus.Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Expedita repudiandae excepturi eos, cum
-                            explicabo culpa dignissimos dolores, possimus voluptatibus rerum velit enim ea quia
-                            doloribus nam nostrum voluptate. In, minus.</p>
+                        <p class=" lead card-text my-2 lh-lg "></p>
 
                     </div>
                 </div>
@@ -103,6 +93,7 @@ $link_target = $link['target'] ? $link['target'] : '_self';
 
     </div>
 </section>
+
 <!--=====================================  PRESENTATION END ==========================================-->
 
 <!--=====================================  LOCATION START ==========================================-->
