@@ -148,3 +148,8 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.08) 8px 26px 13px;
   border-style: none;
 }
+
+.bg-resto {
+  background-color: rgb(245, 245, 245);
+  opacity: 0.1;
+}
