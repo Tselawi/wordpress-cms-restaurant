@@ -1,24 +1,23 @@
-<?php get_header(); ?>
+<?php // Template Name: restau
+    // Template Post Type: post
+?>
+<?php get_header(); 
 
-<div class="container">
-<h1><?php the_title(); ?></h1>
 
-    <?php if (has_post_thumbnail()): ?>
-	    <img src="<?php the_post_thumbnail_url('largest'); ?>" class="img-fluid">
-	<?php endif; ?>
 
-<?php if (have_posts()):
-    while (have_posts()):
-        the_post(); ?>
 
-<div><?php the_content(); ?></div>
+?>
 
-<?php
-    endwhile;
-endif; ?>
-</div>
+<section class=" restaurant-presentation container-fluid">
+
+    <?php get_template_part('template-parts/restaurant','posts');?>
+
+</section>
+
+<section class=" location-section container-fluid">
+
+    <?php get_template_part('template-parts/restaurant','location');?>
+
+</section>
 
 <?php get_footer(); ?>
-
-
-         
