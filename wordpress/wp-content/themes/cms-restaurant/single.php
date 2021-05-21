@@ -20,4 +20,10 @@
 
 </section>
 
+<section class=" submit-section container-fluid">
+
+    <?php get_template_part('template-parts/restaurant','submit');?>
+
+</section>
+
 <?php get_footer(); ?>

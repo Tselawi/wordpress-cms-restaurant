@@ -15,12 +15,13 @@
             
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid py-5">
     <div class="container text-center py-5">
         <h5 class="fs-3"><?php echo $subTitle ?></h5>
         <h3 class="text-uppercase fw-bold fs-2"><?php echo $locationTitle ?></h3>
     </div>
-    <img src="<?= $locationSize; ?>" class="img-fluid" style="width:100%;">
+
+    <img src="<?= $locationSize; ?>" class="img-fluid map-img" style="width:100%;">
 </div>
 
 
