@@ -29,7 +29,7 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                         <div class="col"></div>
                                     </div>
                                 </div>
-                            <img src="<?= $pictureBorder; ?>" class="bg-border-2">
+                            <img src="<?= $pictureBorder; ?>" class="bg-border-2 bg-info">
                     <?php endwhile; ?>
                 <?php endif; ?> 
             <?php endif; ?>

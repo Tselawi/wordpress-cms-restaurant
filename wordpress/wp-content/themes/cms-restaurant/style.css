@@ -167,11 +167,8 @@ a:hover {
 }
 .bg-border-2 {
   position: absolute;
-  z-index: -1;
-  bottom: -280%;
-  transform: rotate(180deg);
-  background-color: rgb(245, 245, 245);
-  opacity: 0.1;
+  z-index: 2;
+  bottom: -380%;
 }
 .restaurant-presentation {
   background-color: #f5f5f5;
