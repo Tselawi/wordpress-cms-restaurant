@@ -23,7 +23,7 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                     ?>
                                             <img src="<?= $pictureBorder; ?>" class="bg-border-1">
                                                 <img src="<?= $bg_size ?>" class="bg-resto" >
-                                                    <div class="container restos-title text-center border border-info">
+                                                    <div class="container restos-title text-center">
                                                         <p class="text-center fs-1"><?= $resto_subtitle; ?></p>
                                                         <h1 class="text-center fs-2 fw-bold text-uppercase"><?= $resto_main_title; ?></h1>
                                                     </div>
@@ -77,7 +77,7 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-6">
+                                                                        <div class="col-lg-6 my-5 pb-5">
                                                                             <img src="<?= $imageSize; ?>" class="cafe-img-right">
                                                                         </div>
                                                                         <?php endif; ?>
