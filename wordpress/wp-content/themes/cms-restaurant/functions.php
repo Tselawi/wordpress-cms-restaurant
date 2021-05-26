@@ -91,3 +91,5 @@ add_image_size('my_custom_border_size', 1920, 100, false);
 add_image_size('custom_size_card', 1920, 1080, false);
 
 // add_theme_support('image');
+
+

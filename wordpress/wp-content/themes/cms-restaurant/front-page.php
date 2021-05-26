@@ -1,7 +1,4 @@
-<?php
-get_header();
-
-?>
+<?php get_header();?>
 
 
 <section class="container-fluid banner-top">

@@ -1,4 +1,3 @@
-
 <?php wp_footer(); ?>
 <?php 
 $borderImage = get_field('border_image');
@@ -99,5 +98,6 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
         </div>
     </div>        
 </footer>
+
 </body>
 </html>
