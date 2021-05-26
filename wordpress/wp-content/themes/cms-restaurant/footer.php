@@ -1,9 +1,10 @@
-<?php wp_footer(); ?>
+
 <?php 
 $borderImage = get_field('border_image');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 ?>
 <footer>
+<?php wp_footer(); ?>
     <div class="container bg-dark footer-container text-center">
             <img src="<?= $pictureBorder ?>" class="border-footer-1" alt="border">
                 <div class="row footer-r">
