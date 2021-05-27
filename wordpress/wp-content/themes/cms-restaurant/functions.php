@@ -93,3 +93,9 @@ add_image_size('custom_size_card', 1920, 1080, false);
 // add_theme_support('image');
 
 
+// option page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

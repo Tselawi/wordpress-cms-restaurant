@@ -1,15 +1,15 @@
-
 <?php 
-$borderImage = get_field('border_image');
+
+$borderImage = get_field('border_image', 'option');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 ?>
-<footer>
+<footer class="main-footer">
 <?php wp_footer(); ?>
     <div class="container bg-dark footer-container text-center">
             <img src="<?= $pictureBorder ?>" class="border-footer-1" alt="border">
                 <div class="row footer-r">
-                    <?php if(have_rows('footer_content')) :?>
-                        <?php while(have_rows('footer_content')): the_row();?>
+                    <?php if(have_rows('footer_content','option')) :?>
+                        <?php while(have_rows('footer_content','option')): the_row();?>
                             <?php if(get_row_layout() == 'footer_section'): 
                                 $mainText= get_sub_field('main_footer_text');
                                 ?>
@@ -29,11 +29,11 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
     <img src="<?= $pictureBorder ?>" class="border-footer-2" alt="border">
         <div class="container footer-squre pb-4">
             <div class="row footer-row text-white mx-1">
-                <?php if(have_rows('footer_content')) :?>
-                    <?php while(have_rows('footer_content')): the_row() ?>
+                <?php if(have_rows('footer_content','option')) :?>
+                    <?php while(have_rows('footer_content','option')): the_row() ?>
                         <?php if(get_row_layout() == 'footer_section'): ?>
-                            <?php if(have_rows('footer_contents')):?>
-                                <?php while(have_rows('footer_contents')): the_row();
+                            <?php if(have_rows('footer_contents','option')):?>
+                                <?php while(have_rows('footer_contents','option')): the_row();
                                    $footerLogo = get_sub_field('footer_logo');
                                    $footerDes = get_sub_field('footer_des');
                                    $footerIcon1= get_sub_field('footer_icons_1');
@@ -45,8 +45,8 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                    $images = get_sub_field('footer_images');
 
                                 ?>        
-                                    <div class="col-3">
-                                        <h3 class="fw-bold pb-5"><?= $footerLogo; ?></h3>
+                                    <div class="col-3 my-5">
+                                        <h3 class="fw-bold text-uppercase my-4"><?= $footerLogo; ?></h3>
                                         <p class="font-des"><?= $footerDes; ?></p>
                                         <div class="icon-ft">
                                         <a href="https://www.facebook.com" class="icon-1"><?= $footerIcon1; ?></a>
@@ -60,8 +60,8 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                                         <ul class="footer-list">
                                             <li><i class="far fa-clock"></i>  Mondays ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Closed</li>
                                             <li><i class="far fa-clock"></i>  Tue-Fri ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 10am - 12am</li>
-                                            <li><i class="far fa-clock"></i>  Sat-Sun ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 7am - 1am</li>
-                                            <li><i class="far fa-clock"></i>  Public Holidays ⎯⎯⎯ 7am - 1am</li>
+                                            <li><i class="far fa-clock"></i>  Sat-Sun ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 7am - 1am</li>
+                                            <li><i class="far fa-clock"></i>  Public Holidays ⎯⎯ 7am - 1am</li>
                                         </ul>
                                     </div>
                                     <div class="col-3">
@@ -87,7 +87,7 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
                             <div class="pt-4">
 
                                 <hr>
-                                <p class="text-center"> © 2021 - Zena & Tariq</p>  
+                                <p class="text-center"> © 2021 - ZENA & TARIQ</p>  
 
                             </div>
                         

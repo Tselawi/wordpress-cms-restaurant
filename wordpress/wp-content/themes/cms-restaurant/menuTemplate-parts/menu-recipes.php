@@ -1,16 +1,14 @@
 <div class="container">
-    <?php if(have_rows('content')): ?>
-        <?php while(have_rows('content')): the_row();?>
-            <?php if(get_row_layout() == 'recipes_section'): 
-                $recipeSub = get_sub_field('recipe_sub');
-                $recipeMain = get_sub_field('recipe_main');
+             <?php
+                $recipeSub = get_field('recipe_sub');
+                $recipeMain = get_field('recipe_main');
                 ?>
                 <div class="text-center pt-5 my-5">
                 <p class="fs-1"><?= $recipeSub; ?></p>
                 <h1 class="fs-1 text-uppeercase fw-bold"><?= $recipeMain; ?></h1>
                 </div>
                 <div class="row">
-                    <?php if(have_rows('recipes_cards')) : ?>
+                <?php if(have_rows('recipes_cards')) : ?>
                         <?php while(have_rows('recipes_cards')): the_row(); 
                         $recipeImage = get_sub_field('recipe_image');
                         $recipeImageSize = $recipeImage['sizes']['large'];
@@ -36,8 +34,5 @@
                                 </div> 
                         <?php endwhile;?>
                     <?php endif; ?>                   
-                </div>
-            <?php endif;?>    
-        <?php endwhile;?>    
-    <?php endif ?>    
+                </div> 
 </div>

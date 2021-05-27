@@ -163,17 +163,30 @@ a:hover {
 .bg-main-resto {
   position: relative;
   z-index: 1;
-  height: 100%;
+  background-image: url('./images/burger\ party.png');
+  background-color: #777676;
+  padding-bottom: 160px;
 }
-
+.bg-main-resto::after {
+  background-color: rgba(255, 255, 255, 0.76);
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
 .bg-resto {
   position: absolute;
   z-index: -2;
   opacity: 0.3;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   background-color: #e0e0e0;
+}
+.restos-title {
+  position: relative;
+  z-index: 1;
 }
 .bg-border-1 {
   position: absolute;
@@ -226,6 +239,9 @@ a:hover {
 }
 .card-main-container {
   margin-top: 120px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .main-food {
@@ -300,10 +316,16 @@ a:hover {
 .recipe-link:hover {
   color: #000;
 }
+/* footer */
+.main-footer {
+  height: inherit;
+}
+
 .footer-container {
   height: 300px;
   position: relative;
   z-index: 2;
+  bottom: -150px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -315,7 +337,7 @@ a:hover {
 }
 .footer-r {
   align-items: center;
-  height: 80%;
+  height: 60%;
 }
 .footer-input {
   padding: 9px;
@@ -336,8 +358,8 @@ a:hover {
 .footer-top {
   position: relative;
   z-index: -1;
-  top: -110px;
-  height: 500px;
+  margin-top: 60px;
+  height: fit-content;
 }
 .footer-squre {
   height: 90%;
@@ -375,6 +397,7 @@ a:hover {
   list-style: none;
   word-spacing: 5px;
   line-height: 2.5;
+  font-size: 0.9rem;
 }
 .parent-footer {
   display: grid;
@@ -392,4 +415,5 @@ a:hover {
 }
 .meal-content {
   font-size: 1rem;
+  color: #777676;
 }
