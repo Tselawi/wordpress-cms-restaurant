@@ -15,7 +15,7 @@ $link_target = $link['target'] ? $link['target'] : '_self';
 <!--===================================== POST RESTAURANT START ==========================================-->
 
 <!--=====================================  BANNER START ==========================================-->
-<section class="container-fluid  banner-top">
+<section class="container-fluid banner-recipe">
     <img src="<?php echo $resto_picture; ?>" class="bg-img img-fluid img-resto">
     <div class="container">
         <div class="banner-row row my-5  ">

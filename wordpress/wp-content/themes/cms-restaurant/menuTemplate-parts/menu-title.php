@@ -11,11 +11,11 @@ $pictureBorder = $borderImage_menu['sizes']['my_custom_border_size'];
 ?>
 
 <!--=====================================  BANNER START ==========================================-->
-<div class="container-fluid banner-top">
+<div class="container-fluid banner-recipe">
     <img src="<?= $menuImageSize; ?>" class="bg-img img-fluid img-resto">
     <div class="container">
-        <div class="banner-row row my-5  ">
-            <div class="main-title col-6 ">
+        <div class="banner-row row my-5">
+            <div class="main-title col-6">
                 <?php if ($subTitle): ?>
                 <h3 class="text-white"><?= $subTitle; ?></h3>
                 <?php endif; ?>

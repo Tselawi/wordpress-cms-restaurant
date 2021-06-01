@@ -67,9 +67,12 @@ a:hover {
   z-index: 1;
   height: 950px;
 }
-.banner-row {
-  height: 700px;
+.banner-recipe {
+  position: relative;
+  z-index: 1;
+  height: 620px;
 }
+
 .bg-img {
   position: absolute;
   top: -150px;
@@ -79,7 +82,7 @@ a:hover {
 .img-resto {
   filter: brightness(40%);
   width: 1920px;
-  height: 1080px;
+  height: 750px;
 }
 .border-img {
   position: absolute;
@@ -93,6 +96,14 @@ a:hover {
   left: 0;
   z-index: -1;
   transform: rotate(180deg);
+}
+.border-img-recipe {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(180deg);
+  filter: contrast(95%);
 }
 
 .menu-link {
@@ -416,4 +427,23 @@ a:hover {
 .meal-content {
   font-size: 1rem;
   color: #777676;
+}
+.date-recipe {
+  font-size: 0.8rem;
+  color: #585555;
+}
+.center-recipe {
+  /* height: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-recipe {
+  border-style: none;
+  /* line-height: 3; */
+}
+.recipe-image {
+  object-fit: cover;
+  width: 730px;
+  height: 400px;
 }

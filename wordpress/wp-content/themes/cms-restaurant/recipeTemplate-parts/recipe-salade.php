@@ -1,13 +1,11 @@
 <?php 
 $text = get_field('text_title');
-$main_title = get_field('main_title');
-$image = get_field('feature_image');
-$picture = $image['sizes']['my_custom_size'];
+$main_title = get_field('second_text');
 $borderImage = get_field('border_image');
 $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 ?>
 
-<img src="<?php echo $picture; ?>" class="bg-img">  
+
 <div class="container">
         <div class="banner-row row my-5">
                 <div class="main-title col-6">
