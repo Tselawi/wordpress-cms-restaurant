@@ -102,3 +102,4 @@ $pictureBorder = $borderImage['sizes']['my_custom_border_size'];
 
 </body>
 </html>
+
