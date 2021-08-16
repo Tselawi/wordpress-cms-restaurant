@@ -13,31 +13,12 @@
         <?php endif;?>            
         </ul>
             </nav>
-            <?php  if( get_query_var('page') ) {
-                                $page = get_query_var( 'page' );
-                                } else {
-                                $page = 1;
-                                }
-                                
-               
-                                ?>
-
+          
                     <?php if(have_rows('recipes_cards_lists')): ?>
                         <?php while(have_rows('recipes_cards_lists')): the_row();
-                        $row = 0;
-                        $card_per_page  = 4; // How many cards to display on each page
-                         $cards= get_sub_field( 'recipes_cards' );
-                         $total= count( $cards );
-                         $pages = ceil( $total / $card_per_page );
-                         $min = ( ( $page * $card_per_page ) - $card_per_page ) + 1;
-                         $max= ( $min + $card_per_page ) - 1; ?>
-                            <?php if(get_row_layout() == 'recipes_cards'): 
-                           $row++;
-                           // Ignore this image if $row is lower than $min
-                           if($row < $min) { continue; }
-
-                           // Stop loop completely if $row is higher than $max
-                           if($row > $max) { break; } 
+                    
+                             <?php if(get_row_layout() == 'recipes_cards'):
+                           
 
                                 $recipeDate = get_sub_field('recipe_date');
                                 $recipeIcon = get_sub_field('recipe_icon');
@@ -99,16 +80,9 @@
                                         <?php endif;?>                        
                                     
                                 <?php endif;?>
-                                 
+                                
                     
-                        <?php endwhile; 
-                         // Pagination 
-                         echo  paginate_links( array(
-                            'base' => get_permalink() . '%#%' . '/',
-                            'format' => '?page=%#%',
-                            'current' => $page,
-                            'total' => $pages
-                        ) ); ?>
+                        <?php endwhile; ?>
                        
                         
                     <?php endif;?>   

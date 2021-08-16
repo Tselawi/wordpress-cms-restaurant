@@ -10,7 +10,7 @@ Version: 1.0
   src: url(http://localhost/wordpress/wp-content/themes/cms-restaurant/fonts/Poppins-Regular.ttf)
     format('opentype');
 } */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ Version: 1.0
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -174,13 +174,13 @@ a:hover {
 .bg-main-resto {
   position: relative;
   z-index: 1;
-  background-image: url('./images/burger\ party.png');
+  background-image: url("./images/burger\ party.png");
   background-color: #777676;
   padding-bottom: 160px;
 }
 .bg-main-resto::after {
   background-color: rgba(255, 255, 255, 0.76);
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
